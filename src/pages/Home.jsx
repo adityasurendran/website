@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import { projects } from '../data/projects.js'
-import Typewriter from '../components/Typewriter.jsx'
 
 const highlights = [
   {
@@ -39,48 +38,43 @@ function Home() {
   return (
     <div className="page">
       <section className="hero">
-        <p className="hero-kicker">$ whoami // transition year, athlone community college</p>
-        <h1 className="glitch" data-text="Aditya Surendran">
-          Aditya Surendran
-        </h1>
+        <p className="hero-kicker">Transition Year student, Athlone Community College</p>
+        <h1>Aditya Surendran</h1>
         <p className="hero-sub">
-          <span className="prompt">$</span>{' '}
-          <Typewriter
-            text="distributed systems + ML research. current focus: BFT consensus, BLS signature aggregation, cryptography, AI-assisted development."
-            speed={24}
-            startDelay={1800}
-          />
+          I research and build systems across distributed computing, machine learning and embedded
+          hardware, and I take the work from design through to evaluation and presentation.
+        </p>
+        <p className="hero-skills">
+          Python, Rust, C, TypeScript. Machine learning, distributed systems, cryptography, edge computing.
         </p>
         <div className="hero-actions">
           <Link className="btn" to="/projects">
-            $ cd projects
+            View projects
           </Link>
           <Link className="btn btn-ghost" to="/contact">
-            $ contact
+            Contact
           </Link>
         </div>
       </section>
 
       <section className="section">
         <div className="section-head">
-          <h2 className="section-title">
-            <span className="prompt">$</span> ls ./projects
-          </h2>
+          <h2>Projects</h2>
           <Link className="text-link" to="/projects">
-            view all --&gt;
+            View all
           </Link>
         </div>
         <div className="grid">
           {projects.map((p) => (
-            <article className="card terminal" key={p.slug}>
+            <article className="card" key={p.slug}>
               <div className="card-top">
                 <span className="tag">{p.tag}</span>
-                <span className="status">[ {p.status} ]</span>
+                <span className="status">{p.status}</span>
               </div>
               <h3>{p.name}</h3>
               <p>{p.summary}</p>
               <Link className="text-link" to={p.link || '/projects'}>
-                cat {p.slug}.md
+                Read more
               </Link>
             </article>
           ))}
@@ -89,11 +83,9 @@ function Home() {
 
       <section className="section">
         <div className="section-head">
-          <h2 className="section-title">
-            <span className="prompt">$</span> cat ./highlights
-          </h2>
+          <h2>Highlights</h2>
           <Link className="text-link" to="/maths">
-            full log --&gt;
+            Maths & awards
           </Link>
         </div>
         <div className="timeline">

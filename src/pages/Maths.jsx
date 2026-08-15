@@ -35,16 +35,12 @@ function Maths() {
   return (
     <div className="page">
       <section className="page-head">
-        <h1>
-          <span className="prompt">$</span> cat ./maths-awards
-        </h1>
+        <h1>Maths & Awards</h1>
         <p>Competitive mathematics results and competition recognition.</p>
       </section>
 
       <section className="section">
-        <h2 className="section-title">
-          <span className="prompt">$</span> head -n5 ./competitions
-        </h2>
+        <h2>Competitive mathematics</h2>
         <div className="table-wrap">
           <table className="table">
             <thead>
@@ -71,9 +67,7 @@ function Maths() {
       </section>
 
       <section className="section">
-        <h2 className="section-title">
-          <span className="prompt">$</span> tail -n6 ./awards.log
-        </h2>
+        <h2>Competitions & recognition</h2>
         <div className="timeline">
           <div className="timeline-item">
             <span className="timeline-year">2026</span>

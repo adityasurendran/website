@@ -2,9 +2,7 @@ function Education() {
   return (
     <div className="page">
       <section className="page-head">
-        <h1>
-          <span className="prompt">$</span> cat ./education
-        </h1>
+        <h1>Education</h1>
       </section>
 
       <section className="section">

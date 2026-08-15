@@ -1,25 +1,21 @@
 import { NavLink, Outlet, Link } from 'react-router-dom'
-import Boot from './Boot.jsx'
-import NetworkBackground from './NetworkBackground.jsx'
 
 const links = [
-  { to: '/', label: 'home' },
-  { to: '/projects', label: 'projects' },
-  { to: '/maths', label: 'maths/awards' },
-  { to: '/education', label: 'education' },
-  { to: '/contact', label: 'contact' },
+  { to: '/', label: 'Home' },
+  { to: '/projects', label: 'Projects' },
+  { to: '/maths', label: 'Maths & Awards' },
+  { to: '/education', label: 'Education' },
+  { to: '/contact', label: 'Contact' },
 ]
 
 function Layout() {
   return (
     <div className="site">
-      <Boot />
-      <NetworkBackground />
       <header className="header">
         <div className="header-inner">
           <Link to="/" className="brand">
-            <span className="brand-name">aditya_surendran</span>
-            <span className="brand-sub">~/cs/ai/distributed-systems</span>
+            <span className="brand-name">Aditya Surendran</span>
+            <span className="brand-sub">Computer Science, AI and research</span>
           </Link>
           <nav className="nav" aria-label="Main">
             {links.map((l) => (
@@ -29,7 +25,7 @@ function Layout() {
                 end={l.to === '/'}
                 className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
               >
-                ./{l.label}
+                {l.label}
               </NavLink>
             ))}
           </nav>
@@ -42,12 +38,12 @@ function Layout() {
 
       <footer className="footer">
         <div className="footer-inner">
-          <span className="footer-ver">aditya_surendran v2.1 // distributed with care</span>
+          <span>Aditya Surendran</span>
           <span className="footer-links">
             <a href="https://www.linkedin.com/in/adityasurendran" target="_blank" rel="noreferrer">
-              linkedin
+              LinkedIn
             </a>
-            <a href="mailto:adityasurendran01@gmail.com">email</a>
+            <a href="mailto:adityasurendran01@gmail.com">Email</a>
           </span>
         </div>
       </footer>

@@ -5,9 +5,7 @@ function Projects() {
   return (
     <div className="page">
       <section className="page-head">
-        <h1>
-          <span className="prompt">$</span> ls ./projects
-        </h1>
+        <h1>Projects</h1>
         <p>
           Independent research projects built, tested and evaluated end to end: from question and design
           through implementation, experimentation and presentation.
@@ -28,7 +26,7 @@ function Projects() {
           <p className="project-summary">{p.summary}</p>
           {p.link ? (
             <Link className="text-link" to={p.link}>
-              cat {p.slug}.md --&gt;
+              View project details
             </Link>
           ) : null}
 

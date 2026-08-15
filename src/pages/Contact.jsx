@@ -9,10 +9,8 @@ function Contact() {
   return (
     <div className="page">
       <section className="page-head">
-        <h1>
-          <span className="prompt">$</span> ./contact
-        </h1>
-        <p>Open to opportunities in software engineering, AI, research, technology work experience and international STEM programmes.</p>
+        <h1>Contact</h1>
+        <p>Open to work experience and opportunities across software engineering, AI, research and quantitative finance.</p>
       </section>
 
       <section className="section">
