@@ -620,6 +620,24 @@ p {
   color: var(--accent);
 }
 
+/* ---------- Project links ---------- */
+
+.project-links,
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.card-links {
+  margin-bottom: 0;
+}
+
+.report-links {
+  margin-top: 14px;
+}
+
 /* ---------- Reveal ---------- */
 
 .reveal {

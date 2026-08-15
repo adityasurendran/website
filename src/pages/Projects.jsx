@@ -24,11 +24,18 @@ function Projects() {
             </div>
           </div>
           <p className="project-summary">{p.summary}</p>
-          {p.link ? (
-            <Link className="text-link" to={p.link}>
-              View project details
-            </Link>
-          ) : null}
+          <div className="project-links">
+            {p.link ? (
+              <Link className="text-link" to={p.link}>
+                View project details
+              </Link>
+            ) : null}
+            {p.report ? (
+              <a className="text-link" href={p.report} target="_blank" rel="noreferrer">
+                {p.reportLabel}
+              </a>
+            ) : null}
+          </div>
 
           <div className="project-cols">
             <div>

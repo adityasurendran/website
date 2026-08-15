@@ -70,9 +70,16 @@ function Home() {
                   </div>
                   <h3>{p.name}</h3>
                   <p>{p.summary}</p>
-                  <Link className="text-link" to={p.link || '/projects'}>
-                    Read more
-                  </Link>
+                  <div className="card-links">
+                    <Link className="text-link" to={p.link || '/projects'}>
+                      Read more
+                    </Link>
+                    {p.report ? (
+                      <a className="text-link" href={p.report} target="_blank" rel="noreferrer">
+                        Report
+                      </a>
+                    ) : null}
+                  </div>
                 </article>
               </Reveal>
             ))}

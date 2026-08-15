@@ -5,6 +5,8 @@ export const projects = [
     tag: 'Independent distributed systems research',
     status: 'SciFest National Finalist 2026',
     link: '/sublyne',
+    report: '/reports/sublyne-bft-scifest-report.pdf',
+    reportLabel: 'SciFest project book (PDF)',
     summary:
       'Investigated whether Byzantine Fault Tolerant consensus can scale to large networks while keeping its security guarantees. Designed and built Sublyne, an AI-powered adaptive consensus protocol using DAG dissemination, hierarchical BLS signature aggregation and a machine-learning control plane, cutting communication complexity while keeping safety and liveness.',
     highlights: [
@@ -42,6 +44,8 @@ export const projects = [
     name: 'Smarter Cancer Staging',
     tag: 'Independent machine learning research',
     status: 'CREST Gold Award',
+    report: '/reports/smarter-cancer-staging-yste-report.pdf',
+    reportLabel: 'YSTE report book (PDF)',
     summary:
       'Asked whether gene-expression data alone carries enough biological signal to distinguish early-stage from late-stage breast cancer. Trained and validated models on TCGA and an independent Swedish cohort. The finding was that the signal exists but is limited: a measurable, population-level signal, not a clinical tool.',
     highlights: [
@@ -68,6 +72,8 @@ export const projects = [
     name: 'Pareto-Optimal Urban Transport',
     tag: 'Independent research project',
     status: 'ECO-UNESCO Best Junior Transport Project 2026',
+    report: '/reports/urban-transport-ecounesco-report.pdf',
+    reportLabel: 'ECO-UNESCO report book (PDF)',
     summary:
       'Modelled urban transport optimisation while accounting for environmental impacts and health externalities, not just travel outcomes.',
     highlights: [

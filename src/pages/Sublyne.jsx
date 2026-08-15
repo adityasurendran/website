@@ -113,6 +113,18 @@ function Sublyne() {
           <li>Selected for the Eskom Expo International Science Fair 2026 (South Africa)</li>
         </ul>
       </section>
+
+      <section className="section">
+        <h2>Report</h2>
+        <p>
+          The full SciFest project book for this project is available as a PDF.
+        </p>
+        <p className="report-links">
+          <a className="btn" href="/reports/sublyne-bft-scifest-report.pdf" target="_blank" rel="noreferrer">
+            Open the report
+          </a>
+        </p>
+      </section>
     </div>
   )
 }
