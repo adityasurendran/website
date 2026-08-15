@@ -14,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/sublyne" element={<Sublyne />} />
+        <Route path="/sublyne.html" element={<Sublyne />} />
         <Route path="/maths" element={<Maths />} />
         <Route path="/education" element={<Education />} />
         <Route path="/contact" element={<Contact />} />
