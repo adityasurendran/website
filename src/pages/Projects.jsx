@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { projects } from '../data/projects.js'
 
 function Projects() {
@@ -25,6 +26,11 @@ function Projects() {
             </div>
           </div>
           <p className="project-summary">{p.summary}</p>
+          {p.link ? (
+            <Link className="text-link" to={p.link}>
+              cat {p.slug}.md --&gt;
+            </Link>
+          ) : null}
 
           <div className="project-cols">
             <div>

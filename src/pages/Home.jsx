@@ -79,7 +79,7 @@ function Home() {
               </div>
               <h3>{p.name}</h3>
               <p>{p.summary}</p>
-              <Link className="text-link" to="/projects">
+              <Link className="text-link" to={p.link || '/projects'}>
                 cat {p.slug}.md
               </Link>
             </article>

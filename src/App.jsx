@@ -5,6 +5,7 @@ import Projects from './pages/Projects.jsx'
 import Maths from './pages/Maths.jsx'
 import Education from './pages/Education.jsx'
 import Contact from './pages/Contact.jsx'
+import Sublyne from './pages/Sublyne.jsx'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/sublyne" element={<Sublyne />} />
         <Route path="/maths" element={<Maths />} />
         <Route path="/education" element={<Education />} />
         <Route path="/contact" element={<Contact />} />
