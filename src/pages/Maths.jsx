@@ -1,3 +1,6 @@
+import AwardTimeline from '../components/AwardTimeline.jsx'
+import Reveal from '../components/Reveal.jsx'
+
 const maths = [
   {
     year: '2026',
@@ -34,85 +37,48 @@ const maths = [
 function Maths() {
   return (
     <div className="page">
-      <section className="page-head">
-        <h1>Maths & Awards</h1>
-        <p>Competitive mathematics results and competition recognition.</p>
-      </section>
+      <Reveal>
+        <section className="page-head">
+          <h1>Maths & Awards</h1>
+          <p>Competitive mathematics results and every competition award, in one interactive timeline.</p>
+        </section>
+      </Reveal>
 
-      <section className="section">
-        <h2>Competitive mathematics</h2>
-        <div className="table-wrap">
-          <table className="table">
-            <thead>
-              <tr>
-                <th>Year</th>
-                <th>Competition</th>
-                <th>Result</th>
-              </tr>
-            </thead>
-            <tbody>
-              {maths.map((m) => (
-                <tr key={m.competition}>
-                  <td>{m.year}</td>
-                  <td>
-                    {m.competition}
-                    {m.note ? <span className="table-note"> {m.note}</span> : null}
-                  </td>
-                  <td>{m.result}</td>
+      <Reveal>
+        <section className="section">
+          <h2>Competitive mathematics</h2>
+          <div className="table-wrap">
+            <table className="table">
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th>Competition</th>
+                  <th>Result</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
+              </thead>
+              <tbody>
+                {maths.map((m) => (
+                  <tr key={m.competition}>
+                    <td>{m.year}</td>
+                    <td>
+                      {m.competition}
+                      {m.note ? <span className="table-note"> {m.note}</span> : null}
+                    </td>
+                    <td>{m.result}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </Reveal>
 
-      <section className="section">
-        <h2>Competitions & recognition</h2>
-        <div className="timeline">
-          <div className="timeline-item">
-            <span className="timeline-year">2026</span>
-            <div>
-              <h3>Eskom Expo International Science Fair</h3>
-              <p>One of two students selected to represent SciFest and Ireland. South Africa, 29 Sep - 2 Oct 2026.</p>
-            </div>
-          </div>
-          <div className="timeline-item">
-            <span className="timeline-year">2026</span>
-            <div>
-              <h3>Intel AI Global Summit</h3>
-              <p>One of three students selected to represent Ireland in connection with an international Intel AI / technology opportunity.</p>
-            </div>
-          </div>
-          <div className="timeline-item">
-            <span className="timeline-year">2026</span>
-            <div>
-              <h3>SciFest@College TUS Athlone</h3>
-              <p>Best Project and 1st Place in Intermediate Technology for the Byzantine Fault Tolerance consensus research.</p>
-            </div>
-          </div>
-          <div className="timeline-item">
-            <span className="timeline-year">2026</span>
-            <div>
-              <h3>SciFest@School</h3>
-              <p>Best Project / 1st Place, plus the EirGrid Cleaner Climate Award for the urban transport project.</p>
-            </div>
-          </div>
-          <div className="timeline-item">
-            <span className="timeline-year">2026</span>
-            <div>
-              <h3>ECO-UNESCO Young Environmentalist Awards</h3>
-              <p>Best Junior Transport Project for Pareto-Optimal Urban Transport.</p>
-            </div>
-          </div>
-          <div className="timeline-item">
-            <span className="timeline-year">2025</span>
-            <div>
-              <h3>CREST Gold Award</h3>
-              <p>British Science Association CREST Gold, the highest level of the awards, for the Smarter Cancer Staging research.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Reveal>
+        <section className="section">
+          <h2>All awards</h2>
+          <AwardTimeline />
+        </section>
+      </Reveal>
     </div>
   )
 }
