@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-function CountUp({ end, suffix = '', duration = 1200 }) {
+function CountUp({ end, decimals = 0, suffix = '', prefix = '', duration = 1400 }) {
   const [val, setVal] = useState(0)
   const ref = useRef(null)
   const started = useRef(false)
@@ -16,7 +16,9 @@ function CountUp({ end, suffix = '', duration = 1200 }) {
             const start = performance.now()
             const tick = (now) => {
               const p = Math.min((now - start) / duration, 1)
-              setVal(Math.round(end * (1 - Math.pow(1 - p, 3))))
+              const eased = 1 - Math.pow(1 - p, 3)
+              const raw = end * eased
+              setVal(Number(raw.toFixed(decimals)))
               if (p < 1) requestAnimationFrame(tick)
             }
             requestAnimationFrame(tick)
@@ -28,11 +30,12 @@ function CountUp({ end, suffix = '', duration = 1200 }) {
     )
     io.observe(el)
     return () => io.disconnect()
-  }, [end, duration])
+  }, [end, decimals, duration])
 
   return (
     <span ref={ref}>
-      {val}
+      {prefix}
+      {val.toLocaleString(undefined, { minimumFractionDigits: decimals, maximumFractionDigits: decimals })}
       {suffix}
     </span>
   )

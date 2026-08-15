@@ -700,6 +700,22 @@ p {
   margin-top: 6px;
 }
 
+.stats-4 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .stats-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .stats-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---------- Awards ---------- */
 
 .awards-filters {
@@ -838,6 +854,224 @@ p {
   transform: rotate(180deg);
 }
 
+/* ---------- Sublyne report page ---------- */
+
+.sublyne-head .sublyne-sub {
+  max-width: 720px;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.badge {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border: 1px solid rgba(37, 99, 235, 0.25);
+  border-radius: 999px;
+  padding: 5px 12px;
+}
+
+.sub-nav {
+  position: sticky;
+  top: 66px;
+  z-index: 40;
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  padding: 8px 2px;
+  margin: 0 0 40px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+}
+
+.sub-nav-link {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  padding: 7px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: color 0.15s, background 0.15s;
+}
+
+.sub-nav-link:hover {
+  color: var(--heading);
+  background: var(--bg-soft);
+}
+
+.sub-nav-link.active {
+  color: var(--accent);
+  background: var(--accent-dim);
+  font-weight: 600;
+}
+
+.report-section {
+  scroll-margin-top: 130px;
+}
+
+.report-section > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.report-lead {
+  font-size: 1.12rem;
+  color: var(--heading);
+  max-width: 760px;
+  margin-bottom: 16px;
+}
+
+.report-text {
+  color: var(--text-dim);
+  max-width: 760px;
+  margin-bottom: 16px;
+}
+
+.report-subhead {
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+/* architecture */
+
+.arch-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.arch-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.arch-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 6px 20px rgba(20, 24, 31, 0.06);
+}
+
+.arch-num {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+}
+
+.arch-card h3 {
+  margin: 6px 0 8px;
+}
+
+.arch-card p {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+.stack-chips {
+  margin-top: 6px;
+}
+
+/* chart */
+
+.chart-wrap {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 18px;
+}
+
+.chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
+.legend-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.legend-swatch.blue {
+  background: #2563eb;
+}
+
+.legend-swatch.gray {
+  background: #c3cad2;
+}
+
+.chart-note {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-top: 10px;
+}
+
+/* verification */
+
+.verif-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.verif-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.verif-card:hover {
+  border-color: var(--accent);
+}
+
+.verif-label {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  background: var(--accent-dim);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.verif-stat {
+  font-family: var(--mono);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--heading);
+  margin: 12px 0 8px;
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 900px) {
@@ -885,6 +1119,11 @@ p {
 
   .stats {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .arch-grid,
+  .verif-grid {
+    grid-template-columns: 1fr;
   }
 }
 
