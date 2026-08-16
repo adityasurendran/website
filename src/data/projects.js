@@ -5,8 +5,6 @@ export const projects = [
     tag: 'Independent distributed systems research',
     status: 'SciFest National Finalist 2026',
     link: '/sublyne',
-    report: '/reports/sublyne-bft-scifest-report.pdf',
-    reportLabel: 'SciFest project book (PDF)',
     summary:
       'Investigated whether Byzantine Fault Tolerant consensus can scale to large networks while keeping its security guarantees. Designed and built Sublyne, an AI-powered adaptive consensus protocol using DAG dissemination, hierarchical BLS signature aggregation and a machine-learning control plane, cutting communication complexity while keeping safety and liveness.',
     highlights: [
