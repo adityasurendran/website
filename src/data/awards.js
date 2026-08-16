@@ -68,6 +68,16 @@ export const awards = [
     extra: '',
   },
   {
+    id: 'eirgrid',
+    year: '2026',
+    category: 'STEM Research',
+    title: 'EirGrid Cleaner Climate Award',
+    issuer: 'SciFest CLG / EirGrid',
+    date: 'Mar 2026',
+    detail: 'Awarded at SciFest@School 2026 for "Pareto-Optimal Urban Transport Systems with Environmental and Health Externalities".',
+    extra: '',
+  },
+  {
     id: 'crest-gold',
     year: '2026',
     category: 'STEM Research',
