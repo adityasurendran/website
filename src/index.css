@@ -806,6 +806,35 @@ p {
   padding-right: 32px;
 }
 
+.award-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin-top: 6px;
+}
+
+.award-issuer {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+.award-issuer::before {
+  content: 'by ';
+  color: var(--text-dim);
+}
+
+.award-date {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  color: var(--accent);
+}
+
+.award-date::before {
+  content: '\2022 ';
+  color: var(--text-dim);
+  margin-right: 6px;
+}
+
 .award-body {
   display: grid;
   grid-template-rows: 0fr;

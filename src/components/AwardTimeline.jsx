@@ -77,6 +77,10 @@ function AwardTimeline({ className = '' }) {
                 >
                   <span className="award-category">{a.category}</span>
                   <span className="award-title">{a.title}</span>
+                  <span className="award-meta">
+                    {a.issuer ? <span className="award-issuer">{a.issuer}</span> : null}
+                    {a.date ? <span className="award-date">{a.date}</span> : null}
+                  </span>
                   <span className="award-body">
                     <span className="award-body-inner">
                       <span className="award-detail">{a.detail}</span>

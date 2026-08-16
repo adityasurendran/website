@@ -6,31 +6,31 @@ const maths = [
     year: '2026',
     competition: 'IAMTA Junior Regional Problem Solving Competition',
     result: '1st Place',
-    note: '',
+    note: 'Team of four. Qualified for the national finals, April 2026.',
   },
   {
     year: '2025',
     competition: 'LWETB Junior Maths Competition',
     result: '1st Place',
-    note: '',
+    note: 'Team of four. First out of all LWETB schools.',
   },
   {
     year: '2025',
     competition: 'ETB All-Ireland Junior Maths Competition',
     result: '2nd Place nationally among ETB schools',
-    note: '',
+    note: 'Team of four. Defeated by Tullamore College.',
   },
   {
     year: '2024',
     competition: 'ETB All-Ireland Junior Maths Competition',
     result: '4th Place / Finalist nationally',
-    note: '',
+    note: 'Team of four.',
   },
   {
     year: '2024',
     competition: 'IMTA Maggie Gough Outstanding Achievement',
     result: '5th overall across all year groups, 2nd among Second Year students',
-    note: '95% score. 15,000+ students from 400+ schools.',
+    note: 'Individual. 95% score; 15,000+ students from 400+ schools.',
   },
 ]
 
