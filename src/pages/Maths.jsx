@@ -39,8 +39,8 @@ function Maths() {
     <div className="page">
       <Reveal>
         <section className="page-head">
-          <h1>Maths & Awards</h1>
-          <p>Competitive mathematics results and every competition award, in one interactive timeline.</p>
+          <h1>Maths & Honours</h1>
+          <p>Competitive mathematics results and every honour, in one interactive timeline.</p>
         </section>
       </Reveal>
 
@@ -75,7 +75,7 @@ function Maths() {
 
       <Reveal>
         <section className="section">
-          <h2>All awards</h2>
+          <h2>All honours</h2>
           <AwardTimeline />
         </section>
       </Reveal>

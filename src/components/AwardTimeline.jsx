@@ -57,12 +57,12 @@ function AwardTimeline({ className = '' }) {
       </div>
 
       <p className="awards-count">
-        Showing {filtered.length} of {awards.length} awards
+        Showing {filtered.length} of {awards.length} honours
       </p>
 
       <div className="timeline">
         {filtered.length === 0 ? (
-          <p className="awards-empty">No awards match these filters.</p>
+          <p className="awards-empty">No honours match these filters.</p>
         ) : (
           filtered.map((a) => {
             const isOpen = open === a.id
