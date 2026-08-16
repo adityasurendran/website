@@ -101,6 +101,16 @@ export const awards = [
     extra: '',
   },
   {
+    id: 'pi-quiz',
+    year: '2026',
+    category: 'Mathematics',
+    title: '4th Place, Regional Pi Quiz',
+    issuer: 'Irish Mathematics Teachers Association (IMTA)',
+    date: '2026',
+    detail: 'Placed 4th alongside three other third-year students in the Pi Quiz hosted at Marist College.',
+    extra: '',
+  },
+  {
     id: 'dcu-eue',
     year: '2026',
     category: 'University',
@@ -131,6 +141,17 @@ export const awards = [
     date: 'Nov 2025',
     detail:
       'Tied first place for most of the competition before being defeated by Tullamore College, finishing second out of all ETB schools in Ireland. Hosted at Bloomfield House Hotel, Mullingar.',
+    extra: '',
+  },
+  {
+    id: 'lwetb-2024',
+    year: '2024',
+    category: 'Mathematics',
+    title: '3rd Place, LWETB Junior Maths Competition',
+    issuer: 'Longford Westmeath Education Training Board',
+    date: '2024',
+    detail:
+      'Placed 3rd out of all schools in the Longford Westmeath ETB area as part of a team, in a competition hosted at Athlone Community College. Qualified to the ETB All-Ireland Finals.',
     extra: '',
   },
   {

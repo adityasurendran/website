@@ -9,7 +9,7 @@ const stats = [
   { end: awards.length, label: 'Honours & distinctions' },
   { end: projects.length, label: 'Research projects' },
   { end: 2, label: 'International selections' },
-  { end: 5, label: 'Maths competition placements' },
+  { end: awards.filter((a) => a.category === 'Mathematics').length, label: 'Maths competition placements' },
 ]
 
 function Home() {

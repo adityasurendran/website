@@ -9,6 +9,12 @@ const maths = [
     note: 'Team of four. Qualified for the national finals, April 2026.',
   },
   {
+    year: '2026',
+    competition: 'IMTA Regional Pi Quiz',
+    result: '4th Place',
+    note: 'Team of four third years. Hosted at Marist College.',
+  },
+  {
     year: '2025',
     competition: 'LWETB Junior Maths Competition',
     result: '1st Place',
@@ -19,6 +25,12 @@ const maths = [
     competition: 'ETB All-Ireland Junior Maths Competition',
     result: '2nd Place nationally among ETB schools',
     note: 'Team of four. Defeated by Tullamore College.',
+  },
+  {
+    year: '2024',
+    competition: 'LWETB Junior Maths Competition',
+    result: '3rd Place',
+    note: 'Team of three. Hosted at Athlone Community College.',
   },
   {
     year: '2024',
