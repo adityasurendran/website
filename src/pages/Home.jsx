@@ -30,9 +30,9 @@ function Home() {
             <Link className="btn" to="/projects">
               View projects
             </Link>
-            <Link className="btn btn-ghost" to="/contact">
-              Contact
-            </Link>
+            <a className="btn btn-ghost" href="/Aditya-Surendran-CV.pdf" target="_blank" rel="noreferrer">
+              Download CV
+            </a>
           </div>
         </section>
       </Reveal>

@@ -21,6 +21,10 @@ function Contact() {
               <span className="contact-value">{c.value}</span>
             </a>
           ))}
+          <a className="contact-item" href="/Aditya-Surendran-CV.pdf" target="_blank" rel="noreferrer">
+            <span className="contact-label">CV</span>
+            <span className="contact-value">Download PDF</span>
+          </a>
         </div>
       </section>
     </div>
