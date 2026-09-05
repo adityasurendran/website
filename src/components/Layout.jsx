@@ -1,4 +1,5 @@
 import { NavLink, Outlet, Link } from 'react-router-dom'
+import HoldName from './HoldName.jsx'
 
 const links = [
   { to: '/', label: 'Home' },
@@ -14,7 +15,9 @@ function Layout() {
       <header className="header">
         <div className="header-inner">
           <Link to="/" className="brand">
-            <span className="brand-name">Aditya Surendran</span>
+            <span className="brand-name">
+              <HoldName>Aditya Surendran</HoldName>
+            </span>
             <span className="brand-sub">Computer Science, AI and research</span>
           </Link>
           <nav className="nav" aria-label="Main">
@@ -38,7 +41,9 @@ function Layout() {
 
       <footer className="footer">
         <div className="footer-inner">
-          <span>Aditya Surendran</span>
+          <span>
+            <HoldName>Aditya Surendran</HoldName>
+          </span>
           <span className="footer-links">
             <a href="https://www.linkedin.com/in/adityasurendran" target="_blank" rel="noreferrer">
               LinkedIn

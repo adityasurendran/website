@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { projects } from '../data/projects.js'
 import { awards } from '../data/awards.js'
 import AwardTimeline from '../components/AwardTimeline.jsx'
+import HoldName from '../components/HoldName.jsx'
 import Reveal from '../components/Reveal.jsx'
 import CountUp from '../components/CountUp.jsx'
 
@@ -18,7 +19,9 @@ function Home() {
       <Reveal>
         <section className="hero">
           <p className="hero-kicker">Transition Year student, Athlone Community College</p>
-          <h1>Aditya Surendran</h1>
+          <h1>
+            <HoldName>Aditya Surendran</HoldName>
+          </h1>
           <p className="hero-sub">
             I research and build systems across distributed computing, machine learning and embedded
             hardware, and I take the work from design through to evaluation and presentation.
